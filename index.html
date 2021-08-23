@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+        <script src="index.js">    </script>
+        <style> 
+        
+
+            </style>
+    </head>
+    <body>
+        <h1>Sign In</h1>
+        <div id="formContainer"> 
+            <div class="container">
+            <div class="row">
+             <input type="email" placeholder="Email" id="email">  </input>
+             </div>
+             <div class="row">
+             <input type="password" placeholder="Password" id="password"> </input>
+            </div>
+              <button class="button button1" onclick="signIn()"> Sign In</button>
+
+              
+      
+              <h4>OR</h4>
+              <button class="button button3" onclick="googleSignIn()"> Sign in with Google </button>
+      
+              <button  class="button button2"  onclick="window.location.href='signup.html'" >Sign Up</button>
+
+              
+      
+            </div>
+       
+     </div>
+
+    </div>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBdsaXwQuCqbYv6_pni8lEaPa7OsOSiepA",
+    authDomain: "blog-65b34.firebaseapp.com",
+    projectId: "blog-65b34",
+    storageBucket: "blog-65b34.appspot.com",
+    messagingSenderId: "229930262946",
+    appId: "1:229930262946:web:cf9a06c2abbc41f3a952fb",
+    databaseURL:"https://blog-65b34-default-rtdb.firebaseio.com/"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</body>
+</html>
